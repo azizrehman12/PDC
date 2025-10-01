@@ -27,20 +27,20 @@ const Contact = () => {
     {
       icon: Mail,
       title: 'Email',
-      info: 'pdcsociety@university.edu',
+      info: 'azizrehmanf23@gmail.com',
       subinfo: 'We typically respond within 12 hours during academic sessions'
     },
     {
       icon: Phone,
       title: 'Phone',
-      info: '+92 (300) 123-4567',
+      info: '+92 309 9080378',
       subinfo: 'Available Monday - Friday, 10 AM - 5 PM (University Hours)'
     },
     {
       icon: MapPin,
       title: 'Address',
-      info: 'Student Activity Center',
-      subinfo: 'Room 205, University Campus, Main Building'
+      info: 'National University of Science and Technology',
+      subinfo: 'Main Karnal Sher Khan Shaheed Rd, I-12, Islambad'
     }
   ];
 

@@ -1,6 +1,6 @@
 import React from 'react';
 import { motion } from 'framer-motion';
-import { Crown, Star, Users, Calendar, Award, Shield, Heart, Trophy } from 'lucide-react';
+import { Crown, Star, Users, Calendar, Award, Shield, Heart, Trophy, Camera } from 'lucide-react';
 
 const Leadership = () => {
   const currentLeadership = [
@@ -28,79 +28,62 @@ const Leadership = () => {
       achievements: 'Established mentorship programs and enhanced student engagement activities'
     },
     {
-      name: 'Fatima Khan',
+      name: 'Sahal Shah',
       tenure: '2022 - 2023',
-      image: 'https://images.pexels.com/photos/1222271/pexels-photo-1222271.jpeg?auto=compress&cs=tinysrgb&w=400',
-      achievements: 'Launched academic support programs and cultural festival initiatives'
+      image: 'Salah.jpg',
+      achievements: 'President'
     },
     {
-      name: 'Usman Shah',
+      name: 'Muhammad ali',
       tenure: '2021 - 2022',
-      image: 'https://images.pexels.com/photos/1516680/pexels-photo-1516680.jpeg?auto=compress&cs=tinysrgb&w=400',
-      achievements: 'Founded the scholarship program and student welfare fund'
+      image: 'Usman.png',
+      achievements: 'Gerenal Secretary'
     },
-    {
-      name: 'Ayesha Malik',
-      tenure: '2020 - 2021',
-      image: 'https://images.pexels.com/photos/1181424/pexels-photo-1181424.jpeg?auto=compress&cs=tinysrgb&w=400',
-      achievements: 'Established inter-university collaboration programs'
-    },
-    {
-      name: 'Hassan Ali',
-      tenure: '2019 - 2020',
-      image: 'https://images.pexels.com/photos/1043471/pexels-photo-1043471.jpeg?auto=compress&cs=tinysrgb&w=400',
-      achievements: 'Initiated digital transformation and online engagement platforms'
-    }
+   
   ];
 
   const exGeneralSecretaries = [
     {
-      name: 'Zara Ahmed',
-      tenure: '2023 - 2024',
-      image: 'https://images.pexels.com/photos/1181686/pexels-photo-1181686.jpeg?auto=compress&cs=tinysrgb&w=400',
-      achievements: 'Streamlined society operations and improved communication systems'
+      name: 'Ali Ahmed',
+      tenure: '2024 - 2025',
+      image: 'ALI 1.png',
+      achievements: 'Education and Information Secretary'
     },
     {
-      name: 'Omar Khan',
-      tenure: '2022 - 2023',
-      image: 'https://images.pexels.com/photos/1040880/pexels-photo-1040880.jpeg?auto=compress&cs=tinysrgb&w=400',
-      achievements: 'Enhanced record-keeping and established alumni network'
+      name: 'Haibat Ullah Tareen',
+      tenure: '2024 - 2025',
+      image: 'Haibat.png',
+      achievements: 'Bood Secretary'
     },
     {
-      name: 'Mariam Shah',
-      tenure: '2021 - 2022',
-      image: 'https://images.pexels.com/photos/1181519/pexels-photo-1181519.jpeg?auto=compress&cs=tinysrgb&w=400',
-      achievements: 'Developed comprehensive event management protocols'
+      name: 'Muhammad Hamza Khan',
+      tenure: '2024 - 2025',
+      image: 'Hamza.jpg',
+      achievements: 'Media Secretary'
     },
     {
-      name: 'Tariq Ahmed',
-      tenure: '2020 - 2021',
-      image: 'https://images.pexels.com/photos/1043474/pexels-photo-1043474.jpeg?auto=compress&cs=tinysrgb&w=400',
-      achievements: 'Implemented student feedback systems and grievance handling'
+      name: 'Hakim Zaman',
+      tenure: '2024 - 2025',
+      image: 'Hakim.jpg',
+      achievements: 'Management Secreatary'
     },
     {
-      name: 'Nadia Ali',
-      tenure: '2019 - 2020',
-      image: 'https://images.pexels.com/photos/1181690/pexels-photo-1181690.jpeg?auto=compress&cs=tinysrgb&w=400',
-      achievements: 'Established documentation standards and archival systems'
+      name: 'Mahad Ullah',
+      tenure: '2024 - 2025',
+      image: 'Mahad Ullah.jpg',
+      achievements: 'Finance Secretary'
     },
-    {
-      name: 'Bilal Khan',
-      tenure: '2018 - 2019',
-      image: 'https://images.pexels.com/photos/1040881/pexels-photo-1040881.jpeg?auto=compress&cs=tinysrgb&w=400',
-      achievements: 'Created comprehensive member database and tracking system'
-    }
   ];
 
   const cabinet = [
-    { name: 'Finance Secretary', member: 'Ali Hassan', icon: Award },
-    { name: 'Academic Affairs', member: 'Fatima Khan', icon: Users },
-    { name: 'Cultural Affairs', member: 'Usman Ali', icon: Star },
-    { name: 'Sports Coordinator', member: 'Zara Ahmed', icon: Trophy },
-    { name: 'Media & PR', member: 'Muhammad Tariq', icon: Shield },
-    { name: 'Event Management', member: 'Ayesha Malik', icon: Calendar },
-    { name: 'Student Welfare', member: 'Hassan Shah', icon: Heart },
-    { name: 'Alumni Relations', member: 'Noor Ahmed', icon: Users }
+    { name: 'Finance Secretary', member: 'Mikail Khan', icon: Award },
+    { name: 'Event Secretary', member: 'M.Salah Uddin', icon: Calendar },
+    { name: 'Education and Information Secretary', member: 'Asmat Ullah', icon: Star },
+    { name: 'Sports Secretary', member: 'Huzifa Khan', icon: Trophy },
+    { name: 'Media Secretary', member: 'Hassan Khan', icon: Camera },
+    { name: 'Blood Bank Secretary', member: 'Hasseb ur Rehman', icon: Heart },
+    { name: 'Hostel Representative', member: 'Safyan Malik', icon: Users },
+    { name: 'Afghan Community Representative', member: 'Kamran Khan', icon: Users }
   ];
 
   return (
