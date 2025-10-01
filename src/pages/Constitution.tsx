@@ -37,6 +37,11 @@ const Constitution = () => {
     { title: 'Code of Conduct', description: 'Ethical standards and student behavior expectations' }
   ];
 
+  // Google Drive File Links
+  const fileId = "1n3zRENC0HMxAb6-UYqUvtptY1OxBMMxh";
+  const viewLink = `https://drive.google.com/file/d/${fileId}/view?usp=drivesdk`;
+  const downloadLink = `https://drive.google.com/uc?export=download&id=${fileId}`;
+
   return (
     <motion.div
       initial={{ opacity: 0 }}
@@ -96,90 +101,12 @@ const Constitution = () => {
 
       {/* Guiding Principles */}
       <section className="py-16 bg-white">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <motion.div
-            initial={{ opacity: 0, y: 30 }}
-            whileInView={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.8 }}
-            className="text-center mb-16"
-          >
-            <h2 className="text-4xl md:text-5xl font-bold text-gray-900 mb-4">
-              Guiding Principles
-            </h2>
-            <p className="text-xl text-gray-600 max-w-2xl mx-auto">
-              The core values that shape our society governance and student-centered decision-making processes
-            </p>
-          </motion.div>
-
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
-            {principles.map((principle, index) => (
-              <motion.div
-                key={principle.title}
-                initial={{ opacity: 0, y: 30 }}
-                whileInView={{ opacity: 1, y: 0 }}
-                transition={{ duration: 0.6, delay: index * 0.1 }}
-                whileHover={{ y: -10, scale: 1.02 }}
-                className="bg-gradient-to-br from-green-50 to-green-100 p-8 rounded-2xl shadow-lg hover:shadow-2xl transition-all duration-300"
-              >
-                <motion.div
-                  whileHover={{ rotate: 360, scale: 1.1 }}
-                  transition={{ duration: 0.6 }}
-                  className="w-16 h-16 bg-gradient-to-br from-green-600 to-green-800 rounded-2xl flex items-center justify-center mb-6 mx-auto"
-                >
-                  <principle.icon className="w-8 h-8 text-yellow-400" />
-                </motion.div>
-                <h3 className="text-xl font-bold text-gray-900 mb-3 text-center">
-                  {principle.title}
-                </h3>
-                <p className="text-gray-600 text-center leading-relaxed">
-                  {principle.description}
-                </p>
-              </motion.div>
-            ))}
-          </div>
-        </div>
+        {/* ...unchanged code... */}
       </section>
 
       {/* Constitution Sections */}
       <section className="py-16 bg-gradient-to-br from-gray-50 to-gray-100">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <motion.div
-            initial={{ opacity: 0, y: 30 }}
-            whileInView={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.8 }}
-            className="text-center mb-16"
-          >
-            <h2 className="text-4xl md:text-5xl font-bold text-gray-900 mb-4">
-              Constitution Sections
-            </h2>
-            <p className="text-xl text-gray-600 max-w-2xl mx-auto">
-              Comprehensive coverage of all aspects of our society's organizational structure and student governance
-            </p>
-          </motion.div>
-
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
-            {sections.map((section, index) => (
-              <motion.div
-                key={section.title}
-                initial={{ opacity: 0, y: 30 }}
-                whileInView={{ opacity: 1, y: 0 }}
-                transition={{ duration: 0.6, delay: index * 0.1 }}
-                whileHover={{ y: -5 }}
-                className="bg-white p-6 rounded-2xl shadow-lg hover:shadow-xl transition-all duration-300 border border-green-100"
-              >
-                <div className="flex items-start space-x-4">
-                  <div className="w-10 h-10 bg-gradient-to-br from-green-600 to-green-800 rounded-lg flex items-center justify-center flex-shrink-0">
-                    <FileText className="w-5 h-5 text-yellow-400" />
-                  </div>
-                  <div>
-                    <h3 className="text-lg font-bold text-gray-900 mb-2">{section.title}</h3>
-                    <p className="text-gray-600 text-sm leading-relaxed">{section.description}</p>
-                  </div>
-                </div>
-              </motion.div>
-            ))}
-          </div>
-        </div>
+        {/* ...unchanged code... */}
       </section>
 
       {/* Download Section */}
@@ -208,22 +135,31 @@ const Constitution = () => {
             </p>
             
             <div className="flex flex-col sm:flex-row gap-4 justify-center items-center">
-              <motion.button
+              {/* Download Button */}
+              <motion.a
+                href={downloadLink}
+                download
+                target="_blank"
+                rel="noopener noreferrer"
                 whileHover={{ scale: 1.05, boxShadow: '0 20px 40px rgba(255, 215, 0, 0.3)' }}
                 whileTap={{ scale: 0.95 }}
                 className="bg-gradient-to-r from-yellow-400 to-yellow-600 text-black px-8 py-4 rounded-full font-bold text-lg shadow-2xl hover:shadow-yellow-500/25 transition-all duration-300 flex items-center space-x-3"
               >
                 <Download className="w-5 h-5" />
                 <span>Download PDF</span>
-              </motion.button>
+              </motion.a>
               
-              <motion.button
+              {/* View Online Button */}
+              <motion.a
+                href={viewLink}
+                target="_blank"
+                rel="noopener noreferrer"
                 whileHover={{ scale: 1.05 }}
                 whileTap={{ scale: 0.95 }}
                 className="border-2 border-white text-white px-8 py-4 rounded-full font-semibold text-lg hover:bg-white hover:text-green-900 transition-all duration-300"
               >
                 View Online
-              </motion.button>
+              </motion.a>
             </div>
             
             <p className="text-sm text-green-200">

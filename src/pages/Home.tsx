@@ -12,7 +12,7 @@ const Home = () => {
     },
     {
       icon: Award,
-      number: '15+',
+      number: '7+',
       label: 'Years of Excellence',
       color: 'from-yellow-500 to-yellow-600'
     },
@@ -24,7 +24,7 @@ const Home = () => {
     },
     {
       icon: Calendar,
-      number: '100+',
+      number: '30+',
       label: 'Annual Events',
       color: 'from-yellow-500 to-yellow-600'
     }
@@ -106,9 +106,10 @@ const Home = () => {
             transition={{ duration: 1, delay: 0.2 }}
             className="mb-8"
           >
-            <div className="w-32 h-32 bg-gradient-to-br from-yellow-400 to-yellow-600 rounded-3xl flex items-center justify-center mx-auto mb-8 shadow-2xl">
-              <Shield className="w-16 h-16 text-white" />
-            </div>
+            <div className="w-32 h-32 bg-gradient-to-br from-yellow-400 to-yellow-600 rounded-2xl flex items-center justify-center mx-auto mb-8 shadow-2xl">
+  <img src="/pdc1.png" alt="PDC Logo" className="w-30 h-30 object-contain object-cover rounded-full" />
+</div>
+
           </motion.div>
           
           <motion.h1

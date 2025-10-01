@@ -15,7 +15,7 @@ const Footer = () => {
           >
             <div className="flex items-center space-x-3">
               <div className="w-12 h-12 bg-gradient-to-br from-green-500 to-green-700 rounded-full flex items-center justify-center">
-                <Shield className="w-6 h-6 text-yellow-400" />
+               <img src="/pdc1.png" alt="PDC Logo" className="w-12 h-12 object-contain object-cover rounded-full" />
               </div>
               <div>
                 <h3 className="text-xl font-bold">PDC</h3>
@@ -60,15 +60,15 @@ const Footer = () => {
             <div className="space-y-3">
               <div className="flex items-center space-x-3">
                 <Mail className="w-4 h-4 text-green-400" />
-                <span className="text-gray-300 text-sm">info@pdc.org</span>
+                <span className="text-gray-300 text-sm">azizrehmanf23@gmail.com</span>
               </div>
               <div className="flex items-center space-x-3">
                 <Phone className="w-4 h-4 text-green-400" />
-                <span className="text-gray-300 text-sm">+1 (555) 123-4567</span>
+                <span className="text-gray-300 text-sm">+92 309 9080378</span>
               </div>
               <div className="flex items-center space-x-3">
                 <MapPin className="w-4 h-4 text-green-400" />
-                <span className="text-gray-300 text-sm">Community Center</span>
+                <span className="text-gray-300 text-sm">National University of Science and TechnologyMain Karnal Sher Khan Shaheed Rd, I-12, Islambad</span>
               </div>
             </div>
           </motion.div>
@@ -82,13 +82,16 @@ const Footer = () => {
           >
             <h4 className="text-lg font-semibold text-yellow-400">Follow Us</h4>
             <div className="flex space-x-4">
-              <motion.a
-                href="#"
-                whileHover={{ scale: 1.1, rotate: 5 }}
-                className="w-10 h-10 bg-gradient-to-br from-pink-500 to-purple-600 rounded-full flex items-center justify-center"
-              >
-                <Instagram className="w-5 h-5" />
-              </motion.a>
+             <motion.a
+  href="https://www.instagram.com/thepdc?igsh=MW8wNTQxZmFnaHF2ag=="
+  target="_blank"
+  rel="noopener noreferrer"
+  whileHover={{ scale: 1.1, rotate: 5 }}
+  className="w-10 h-10 bg-gradient-to-br from-pink-500 to-purple-600 rounded-full flex items-center justify-center"
+>
+  <Instagram className="w-5 h-5" />
+</motion.a>
+
               <motion.a
                 href="#"
                 whileHover={{ scale: 1.1, rotate: -5 }}
@@ -107,7 +110,7 @@ const Footer = () => {
           className="border-t border-gray-700 mt-12 pt-8 text-center"
         >
           <p className="text-gray-400 text-sm">
-            © 2025 Pakhtoon Development Council. All rights reserved.
+           Aziz Rehman SE-23 || © 2025 Pakhtoon Development Council. All rights reserved.
           </p>
         </motion.div>
       </div>
